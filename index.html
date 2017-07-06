@@ -13,11 +13,12 @@
         background-color: white;
         margin: auto;
         width: 500px;
+        font-family: Georgia;
     }
     .title {
         text-align: center;
     }
-    .header-name {
+    .title2 {
         text-align: center;
     }
     .left-side {
@@ -36,22 +37,24 @@
             <header class="title"><h1>Survey Form</h1></header>
         <form class="form">
             <table>
-                <th class="header-name">
-                    <td>Let us know how we can improve FreeCodeCamp</td>
-                </th>
+                <br>
+                <br>
+                <header class="title2">Let us know how we can improve FreeCodeCamp</header>
                 <tr>
                     <td class="left-side">*Name:</td>
-                    <td class="right-side"><input type="text" name="fullname" placeholder="Enter your name"></input></td>
+                    <td class="right-side">
+                        <input type="text" name="fullname" placeholder="Enter your name" required></input></td>
                 </tr>
                 <br>
                 <tr>
                     <td class="left-side">*Email:</td>
-                    <td class="right-side"><input type="text" name="email" placeholder="Enter your Email"></input></td>
+                    <td class="right-side"><input type="email" name="email" placeholder="Enter your Email" required></input></td>
                 </tr>
                 <br>
                 <tr>
                     <td class="left-side">*Age:</td>
-                    <td class="right-side"><input type="text" name="age" placeholder="Age"></input></td>
+                    <td class="right-side">
+                        <input type="number" min="13" max="110" name="age" placeholder="Age"></input></td>
                     <br>
                 </tr>
                 <tr>
